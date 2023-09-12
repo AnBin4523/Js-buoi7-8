@@ -17,7 +17,10 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label>Nhập số</label>
-                            <input id="txtNumber" type="number" placeholder="Nhập vào các số nguyên n..." class="form-control" >
+                            <input id="txtNumber" type="number" placeholder="Nhập vào các số nguyên n..." class="form-control" style="margin-bottom: 10px;">
+                            <label>Nhập vào 2 vị trí</label>
+                            <input id="viTri_1" type="number" placeholder="Nhập vào vị trí 1" class="form-control" style="margin-bottom: 10px;">
+                            <input id="viTri_2" type="number" placeholder="Nhập vào vị trí 2" class="form-control">
                         </div>
                         <button class="btn btn-success" onclick="themSo()">Thêm số vào mảng</button>
                         <button class="btn btn-success" onclick="tongSoDuong()" style="display: block; margin-top: 10px;">Tổng các số dương</button>
@@ -25,6 +28,11 @@
                         <button class="btn btn-success" onclick="soNhoNhat()" style="display: block; margin-top: 10px;">Số nhỏ nhất</button>
                         <button class="btn btn-success" onclick="soDuongNhoNhat()" style="display: block; margin-top: 10px;">Số dương nhỏ nhất</button>
                         <button class="btn btn-success" onclick="soChanCuoiCung()" style="display: block; margin-top: 10px;">Số chẵn cuối cùng</button>
+                        <button class="btn btn-success" onclick="mangDaDoiCho()" style="display: block; margin-top: 10px;">Đối vị trí phần tử trong mảng</button>
+                        <button class="btn btn-success" onclick="sapXepTangDan()" style="display: block; margin-top: 10px;">Sắp xếp tăng dần</button>
+                        <button class="btn btn-success" onclick="soNguyenToDauTien()" style="display: block; margin-top: 10px;">Số nguyên tố đầu tiên</button>
+                        <button class="btn btn-success" onclick="demSoNguyen()" style="display: block; margin-top: 10px;">Đếm số nguyên</button>
+                        <button class="btn btn-success" onclick="soSanh_SoAm_SoDuong()" style="display: block; margin-top: 10px;">So sánh số âm & số dương</button>
 
                     </div>
                     <div class="card-footer text-muted">
@@ -34,6 +42,11 @@
                         <div id="minNumberNoti"></div>
                         <div id="minPositiveNoti"></div>
                         <div id="lastEvenNoti"></div>
+                        <div id="switchIndexNoti"></div>
+                        <div id="arrangeAscendNoti"></div>
+                        <div id="firstPrimeNoti"></div>
+                        <div id="countInteger"></div>
+                        <div id="compareNumberNoti"></div>
                     </div>
                 </div>
             </div>
