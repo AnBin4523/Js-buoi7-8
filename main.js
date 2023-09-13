@@ -10,6 +10,7 @@ function themSo() {
     document.getElementById("showArrayNoti").innerHTML = content;
 }
 
+// cau 1
 function tongSoDuong() {
     if (listNumber.length === 0) {
         alert("Vui lòng nhập số");
@@ -26,6 +27,7 @@ function tongSoDuong() {
     document.getElementById("totalPositiveNoti").innerHTML = content;
 }
 
+// cau 2
 function demSoDuong() {
     if (listNumber.length === 0) {
         alert("Vui lòng nhập số");
@@ -42,6 +44,7 @@ function demSoDuong() {
     document.getElementById("countPositiveNoti").innerHTML = content;
 }
 
+// cau 3
 function soNhoNhat() {
     if (listNumber.length === 0) {
         alert("Vui lòng nhập số");
@@ -58,6 +61,7 @@ function soNhoNhat() {
     document.getElementById("minNumberNoti").innerHTML = content;
 }
 
+// cau 4
 function soDuongNhoNhat() {
     if (listNumber.length === 0) {
         alert("Vui lòng nhập số");
@@ -77,6 +81,7 @@ function soDuongNhoNhat() {
     document.getElementById("minPositiveNoti").innerHTML = content;
 }
 
+// cau 5
 function soChanCuoiCung() {
     if (listNumber.length === 0) {
         alert("Vui lòng nhập số");
@@ -96,9 +101,10 @@ function soChanCuoiCung() {
     document.getElementById("lastEvenNoti").innerHTML = content;
 }
 
-var viTri_1 = document.getElementById("viTri_1").value * 1;
-var viTri_2 = document.getElementById("viTri_2").value * 1;
+// cau 6
 function doiChoGiaTri(listNumber , viTri_1 , viTri_2) {
+    var viTri_1 = document.getElementById("viTri_1").value * 1;
+    var viTri_2 = document.getElementById("viTri_2").value * 1;
     if (viTri_1 < 0 || viTri_1 >= listNumber.length || viTri_2 < 0 || viTri_2 >= listNumber.length) {
         return "Vị trí không hợp lệ";
     }
@@ -111,7 +117,13 @@ function doiChoGiaTri(listNumber , viTri_1 , viTri_2) {
 }
 
 function mangDaDoiCho() {
-    var mangDaDoiCho = doiChoGiaTri(listNumber , viTri_1 ,viTri_2);
+    if (listNumber.length === 0) {
+        alert("Vui lòng nhập số");
+        return;
+    }
+
+    var mangDaDoiCho = doiChoGiaTri(listNumber , viTri_1 ,viTri_2); 
+    console.log(mangDaDoiCho);
     if (typeof mangDaDoiCho === "string") {
         console.log(mangDaDoiCho);
     } else {
@@ -121,6 +133,7 @@ function mangDaDoiCho() {
     document.getElementById("switchIndexNoti").innerHTML = content;
 }
 
+// cau 7
 function sapXepTangDan() {
     if (listNumber.length === 0) {
         alert("Vui lòng nhập số");
@@ -140,6 +153,7 @@ function sapXepTangDan() {
     document.getElementById("arrangeAscendNoti").innerHTML = content;
 }
 
+// cau 8
 function isPrime(num) {
     if (num < 2) {
         return false;
@@ -178,6 +192,7 @@ function soNguyenToDauTien() {
     document.getElementById("firstPrimeNoti").innerHTML = content;
 }
 
+// cau 9
 function demSoNguyen() {
     if (listNumber.length === 0) {
         alert("Vui lòng nhập số");
@@ -194,6 +209,7 @@ function demSoNguyen() {
     document.getElementById("countInteger").innerHTML = content;
 }
 
+// cau 10
 function soSanh_SoAm_SoDuong() {
     if (listNumber.length === 0) {
         alert("Vui lòng nhập số");
